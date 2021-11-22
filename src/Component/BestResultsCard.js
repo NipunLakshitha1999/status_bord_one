@@ -6,6 +6,7 @@ import car from '../images/6-2-car-png-file-thumb.png';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import { makeStyles } from '@mui/styles';
+import {useEffect, useState} from "react";
 
 const useStyle=makeStyles({
     card:{
@@ -16,7 +17,18 @@ const useStyle=makeStyles({
 })
 export default function BestResultsCard() {
     const classes = useStyle()
-    const data = ["Nipun Lakshitha","Lakshitha Nipun","Lakal Ranuga","Ranuga Lakal","Sachin Gimhan","Gimhan Sachin"]
+    const [data,setData] = useState([])
+
+    useEffect(()=>{
+        setData([
+            {name: 'Nipun Lakshitha', Image: car},
+            {name: 'Lakshitha Nipun', Image: car},
+            {name: 'Lakal Ranuga', Image: car},
+            {name: 'Ranuga Lakal', Image: car},
+            {name: 'Sachin Gimhan', Image: car},
+            {name: 'Gimhan Sachin', Image: car}
+        ]);
+    },[])
     const settings = {
         dots: false,
         infinite: true,
@@ -195,12 +207,12 @@ export default function BestResultsCard() {
                                     <CardMedia
                                         component="img"
                                         height="194"
-                                        image={car}
+                                        image={v.Image}
                                         alt="Paella dish"
                                     />
                                     <CardContent style={cardConetStyle}>
                                         <Typography variant="body3" color="black" alignItems="center" fontSize="70" fontFamily="Bebas-Neue,cursive,Oswald,sans-serif,Ubuntu,sans-serif">
-                                           {v}
+                                           {v.name}
                                         </Typography>
                                     </CardContent>
                                 </Card>
@@ -222,12 +234,12 @@ export default function BestResultsCard() {
                                     <CardMedia
                                         component="img"
                                         height="194"
-                                        image={car}
+                                        image={v.Image}
                                         alt="Paella dish"
                                     />
                                     <CardContent style={cardConetStyle}>
                                         <Typography variant="body3" color="black" alignItems="center" fontSize="70" fontFamily="Bebas-Neue,cursive,Oswald,sans-serif,Ubuntu,sans-serif">
-                                            {v}
+                                            {v.name}
                                         </Typography>
                                     </CardContent>
                                 </Card>
@@ -249,12 +261,12 @@ export default function BestResultsCard() {
                                     <CardMedia
                                         component="img"
                                         height="194"
-                                        image={car}
+                                        image={v.Image}
                                         alt="Paella dish"
                                     />
                                     <CardContent style={cardConetStyle}>
                                         <Typography variant="body3" color="black" alignItems="center" fontSize="70" fontFamily="Bebas-Neue,cursive,Oswald,sans-serif,Ubuntu,sans-serif">
-                                            {v}
+                                            {v.name}
                                         </Typography>
                                     </CardContent>
                                 </Card>
@@ -276,12 +288,12 @@ export default function BestResultsCard() {
                                     <CardMedia
                                         component="img"
                                         height="194"
-                                        image={car}
+                                        image={v.Image}
                                         alt="Paella dish"
                                     />
                                     <CardContent style={cardConetStyle}>
                                         <Typography variant="body3" color="black" alignItems="center" fontSize="70" fontFamily="Bebas-Neue,cursive,Oswald,sans-serif,Ubuntu,sans-serif">
-                                            {v}
+                                            {v.name}
                                         </Typography>
                                     </CardContent>
                                 </Card>
@@ -303,12 +315,12 @@ export default function BestResultsCard() {
                                     <CardMedia
                                         component="img"
                                         height="194"
-                                        image={car}
+                                        image={v.Image}
                                         alt="Paella dish"
                                     />
                                     <CardContent style={cardConetStyle}>
                                         <Typography variant="body3" color="black" alignItems="center" fontSize="70" fontFamily="Bebas-Neue,cursive,Oswald,sans-serif,Ubuntu,sans-serif">
-                                            {v}
+                                            {v.name}
                                         </Typography>
                                     </CardContent>
                                 </Card>
@@ -330,12 +342,12 @@ export default function BestResultsCard() {
                                     <CardMedia
                                         component="img"
                                         height="194"
-                                        image={car}
+                                        image={v.Image}
                                         alt="Paella dish"
                                     />
                                     <CardContent style={cardConetStyle}>
                                         <Typography variant="body3" color="black" alignItems="center" fontSize="70" fontFamily="Bebas-Neue,cursive,Oswald,sans-serif,Ubuntu,sans-serif">
-                                            {v}
+                                            {v.name}
                                         </Typography>
                                     </CardContent>
                                 </Card>
@@ -357,12 +369,12 @@ export default function BestResultsCard() {
                                     <CardMedia
                                         component="img"
                                         height="194"
-                                        image={car}
+                                        image={v.Image}
                                         alt="Paella dish"
                                     />
                                     <CardContent style={cardConetStyle}>
                                         <Typography variant="body3" color="black" alignItems="center" fontSize="70" fontFamily="Bebas-Neue,cursive,Oswald,sans-serif,Ubuntu,sans-serif">
-                                            {v}
+                                            {v.name}
                                         </Typography>
                                     </CardContent>
                                 </Card>
@@ -384,12 +396,12 @@ export default function BestResultsCard() {
                                     <CardMedia
                                         component="img"
                                         height="194"
-                                        image={car}
+                                        image={v.Image}
                                         alt="Paella dish"
                                     />
                                     <CardContent style={cardConetStyle}>
                                         <Typography variant="body3" color="black" alignItems="center" fontSize="70" fontFamily="Bebas-Neue,cursive,Oswald,sans-serif,Ubuntu,sans-serif">
-                                            {v}
+                                            {v.name}
                                         </Typography>
                                     </CardContent>
                                 </Card>
